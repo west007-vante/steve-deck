@@ -4,10 +4,17 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>STEVE — apresentação</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/SpaceGrotesk-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Inter-400.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/SpaceGrotesk-500.woff2) format('woff2')}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/SpaceGrotesk-600.woff2) format('woff2')}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/SpaceGrotesk-700.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/Inter-400.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/Inter-500.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/Inter-600.woff2) format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/JetBrainsMono-500.woff2) format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/JetBrainsMono-600.woff2) format('woff2')}
 :root{
   --s0:#08080A; --s1:#0E0E11; --s2:#15151A; --line:rgba(255,255,255,.08); --line2:rgba(255,255,255,.14);
   --ink:rgba(255,255,255,.96); --ink2:rgba(255,255,255,.62); --ink3:rgba(255,255,255,.34);
@@ -112,7 +119,7 @@ em{font-style:normal;color:var(--ink);font-weight:600}
   <!-- 1 COVER -->
   <section class="s cover">
     <div class="wrap">
-      <img class="steveavatar r" src="https://fneholznpbjbvdswvuyb.supabase.co/storage/v1/object/public/avatars/steve/steve.png" alt="">
+      <img class="steveavatar r" src="avatar.png" width="84" height="84" alt="" decoding="async">
       <div class="eyebrow r">Confidencial · Apresentação pessoal</div>
       <h1 class="r glow">STEVE</h1>
       <div class="tag r">A primeira IA que não responde. <span class="ac">Executa.</span></div>
